@@ -1,0 +1,50 @@
+.box {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+}
+
+.columns {
+    display: flex;
+
+    /* Offset the 10px worth of padding on each column. */
+    margin: -10px -10px 0 -10px;
+}
+
+.columns:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.columns.is-multiline {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column.is-narrow {
+    flex: none;
+}
+
+/* Rinse and repeat for is-1 .. is-11 */
+.column.is-2 {
+    width: 16.66667%;
+    flex: none;
+}
+
+.column.is-4 {
+    width: 33.33333%
+    flex: none;
+}
+
+.column.is-6 {
+    width: 50%;
+    flex: none;
+}
+

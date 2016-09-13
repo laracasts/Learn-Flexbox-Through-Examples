@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.episode-list {
+    max-width: 300px;
+}
+
+.episode-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #cecece;
+    padding: 10px 0;
+}
+
+.episode-list-item.is-current i {
+    padding-right: 1em;
+    color: #cecece;
+}
+
+.episode-list-item .position {
+    color: #00B1B4;
+    font-weight: bold;
+}
+
+.episode-list-item .title {
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.episode-list-item .title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.episode-list-item .title a:hover {
+    text-decoration: underline;
+}
