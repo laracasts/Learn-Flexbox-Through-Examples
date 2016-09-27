@@ -1,0 +1,35 @@
+* { margin: 0; padding: 0; }
+
+body { font-family: sans-serif; }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #00b1b3;
+    padding: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+    }
+}
+
+.nav-item {
+    color: white;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.nav-item > i {
+    color: #005152;
+    padding-right: 6px;
+}

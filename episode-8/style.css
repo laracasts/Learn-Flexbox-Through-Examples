@@ -1,0 +1,60 @@
+* { margin: 0; padding: 0; }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    width: 700px;
+}
+
+.control:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.control.has-addon {
+    display: flex;
+}
+
+.control.has-addon .control-field {
+    flex: 1;
+    border: 1px solid #e3e3e3;
+}
+
+.control.has-addon .control-field:focus {
+    outline: 0;
+    border: 1px solid #00b1b3;
+    border-right: none;
+}
+
+.control.has-addon .control-field:focus + .control-addon {
+    border: 1px solid #00b1b3;
+    border-left: none;
+    animation: fadeColor 2s;
+    animation-iteration-count: infinite;
+}
+
+.control.has-addon .control-addon {
+    background: #e3e3e3;
+    min-width: 25px;
+    text-align: center;
+}
+
+.control > * {
+    padding: .8em;
+}
+
+@keyframes fadeColor {
+    50% {
+        color: #026c6d;
+    }
+}
